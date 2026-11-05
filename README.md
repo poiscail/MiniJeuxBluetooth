@@ -4,6 +4,11 @@ Application Android de 21 mini-jeux : à 2 joueurs, téléphone contre télépho
 
 **Techno :** Kotlin natif + Jetpack Compose + Bluetooth classique RFCOMM — API intégrée à Android, sans Google Play Services ni bibliothèque réseau, fiable et simple (un flux de lignes de texte).
 
+## Lancer le jeu
+L'appli est prête dans le dossier **`Jouer/`** (`MiniJeuxBluetooth.apk`, non publié sur GitHub : le compiler, voir plus bas).
+- **Le plus simple** : copier `MiniJeuxBluetooth.apk` sur le téléphone et l'ouvrir (autoriser « sources inconnues »).
+- **Par câble USB** : brancher le téléphone (débogage USB activé) puis double-cliquer `Jouer/Lancer sur le telephone.bat` : il installe et lance l'appli.
+
 ## Jeux
 - **Réflexes et rapidité** : ⚡ Duel de réflexes · 👆 Tapotage éclair · ⏱️ Chrono parfait · 🐹 Chasse aux taupes
 - **Mémoire et logique** : 🎨 Suite de couleurs · 🔢 Nombre mystère · 🪵 Allumettes
@@ -20,7 +25,7 @@ Application Android de 21 mini-jeux : à 2 joueurs, téléphone contre télépho
 ## Compiler l'APK
 **Avec Android Studio (le plus simple)** : ouvrir ce dossier, attendre la synchronisation Gradle, puis
 *Build › Build App Bundle(s) / APK(s) › Build APK(s)*.
-L'APK sort dans `app/build/outputs/apk/debug/app-debug.apk`.
+L'APK sort dans `app/build/outputs/apk/debug/app-debug.apk` (le copier dans `Jouer/MiniJeuxBluetooth.apk`).
 
 **En ligne de commande** (JDK 17 + Android SDK, `ANDROID_HOME` défini, Gradle installé) :
 ```
@@ -28,8 +33,6 @@ gradle wrapper
 gradlew assembleDebug
 gradlew test
 ```
-
-**Installer** : copier l'APK sur le téléphone et l'ouvrir (autoriser « sources inconnues »), ou `adb install app-debug.apk`.
 
 ## Code
 - `Bt.kt` : connexion RFCOMM (hôte / invité), lecture, envoi, déconnexion.

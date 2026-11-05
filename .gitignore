@@ -13,3 +13,4 @@ keystore.properties
 *.aab
 .DS_Store
 graphify-out/
+.kotlin/
