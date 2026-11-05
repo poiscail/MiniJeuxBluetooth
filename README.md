@@ -5,7 +5,7 @@ Application Android de 21 mini-jeux : à 2 joueurs, téléphone contre télépho
 **Techno :** Kotlin natif + Jetpack Compose + Bluetooth classique RFCOMM — API intégrée à Android, sans Google Play Services ni bibliothèque réseau, fiable et simple (un flux de lignes de texte).
 
 ## Lancer le jeu
-L'appli est prête dans le dossier **`Jouer/`** (`MiniJeuxBluetooth.apk`, non publié sur GitHub : le compiler, voir plus bas).
+**Télécharger l'APK** : [MiniJeuxBluetooth.apk](https://github.com/poiscail/MiniJeuxBluetooth/releases/latest/download/MiniJeuxBluetooth.apk) (page [Releases](https://github.com/poiscail/MiniJeuxBluetooth/releases)). En local, il est aussi dans le dossier **`Jouer/`**.
 - **Le plus simple** : copier `MiniJeuxBluetooth.apk` sur le téléphone et l'ouvrir (autoriser « sources inconnues »).
 - **Par câble USB** : brancher le téléphone (débogage USB activé) puis double-cliquer `Jouer/Lancer sur le telephone.bat` : il installe et lance l'appli.
 
